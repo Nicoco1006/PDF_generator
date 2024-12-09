@@ -10,7 +10,7 @@ app = Flask(__name__, static_folder="static", static_url_path="/static")
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Charger les variables d'environnement
-load_dotenv()
+#load_dotenv()
 
 # Configuration OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")
